@@ -26,23 +26,7 @@ body {
 
 }
 
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
 
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
 
 /* start header */
 .header {
@@ -196,11 +180,11 @@ body {
 
 /* stat fet */
 .content1 .cont {
-
     background-color: #eee;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+
 }
 .fet{
     color: var(--mainColoer);
@@ -227,3 +211,29 @@ box-shadow: 2px 2px #8a5555;
 
 
 /* end fet */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+    .content1 .cont {
+        background-color: #eee;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+}
